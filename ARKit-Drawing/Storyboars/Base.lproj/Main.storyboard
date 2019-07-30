@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,6 +30,9 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boN-p2-qOg">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="FUH-Ez-WDH"/>
+                                            </constraints>
                                             <state key="normal" title="Options">
                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
@@ -41,10 +44,19 @@
                                         </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="boN-p2-qOg" secondAttribute="bottom" id="7bk-aU-8SL"/>
+                                        <constraint firstAttribute="trailing" secondItem="boN-p2-qOg" secondAttribute="trailing" id="Coa-rt-K3C"/>
+                                        <constraint firstAttribute="bottom" secondItem="boN-p2-qOg" secondAttribute="bottom" id="ERZ-eO-1Rm"/>
                                         <constraint firstAttribute="bottom" secondItem="boN-p2-qOg" secondAttribute="bottom" id="Lfd-LS-wi9"/>
                                         <constraint firstItem="boN-p2-qOg" firstAttribute="leading" secondItem="KbE-Uf-rq0" secondAttribute="leading" id="Q8q-jo-8ci"/>
+                                        <constraint firstAttribute="trailing" secondItem="boN-p2-qOg" secondAttribute="trailing" id="TzX-Cx-Y2d"/>
+                                        <constraint firstAttribute="bottom" secondItem="boN-p2-qOg" secondAttribute="bottom" id="Upd-ye-0a1"/>
                                         <constraint firstItem="boN-p2-qOg" firstAttribute="top" secondItem="KbE-Uf-rq0" secondAttribute="top" id="aQz-J6-OqW"/>
+                                        <constraint firstItem="boN-p2-qOg" firstAttribute="leading" secondItem="KbE-Uf-rq0" secondAttribute="leading" id="aUu-3i-s5V"/>
                                         <constraint firstAttribute="trailing" secondItem="boN-p2-qOg" secondAttribute="trailing" id="lm8-ke-FnT"/>
+                                        <constraint firstItem="boN-p2-qOg" firstAttribute="top" secondItem="KbE-Uf-rq0" secondAttribute="top" id="pHM-AI-ZE2"/>
+                                        <constraint firstItem="boN-p2-qOg" firstAttribute="leading" secondItem="KbE-Uf-rq0" secondAttribute="leading" id="uth-IA-UvT"/>
+                                        <constraint firstAttribute="trailing" secondItem="boN-p2-qOg" secondAttribute="trailing" id="vYq-fz-Cht"/>
                                     </constraints>
                                 </view>
                                 <constraints>
@@ -67,13 +79,12 @@
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAH-ye-saP">
                                             <rect key="frame" x="0.0" y="0.0" width="158" height="29"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Ldw-TI-gOS">
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ldw-TI-gOS">
                                                 <rect key="frame" x="0.0" y="0.0" width="158" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-nl-i8i">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="29"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-nl-i8i">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="29"/>
                                                         <segments>
                                                             <segment title="Freeform"/>
                                                             <segment title="Plane"/>
@@ -85,6 +96,12 @@
                                                         </connections>
                                                     </segmentedControl>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="jVE-nl-i8i" secondAttribute="bottom" constant="1" id="3Kg-hX-aVd"/>
+                                                    <constraint firstItem="jVE-nl-i8i" firstAttribute="top" secondItem="Ldw-TI-gOS" secondAttribute="top" id="717-ck-kBI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jVE-nl-i8i" secondAttribute="trailing" id="hqV-9d-HPx"/>
+                                                    <constraint firstItem="jVE-nl-i8i" firstAttribute="leading" secondItem="Ldw-TI-gOS" secondAttribute="leading" id="yX2-4D-k7f"/>
+                                                </constraints>
                                             </view>
                                             <vibrancyEffect>
                                                 <blurEffect style="light"/>
@@ -103,16 +120,52 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qi-V6-QdF">
+                                <rect key="frame" x="16" y="36" width="112" height="30"/>
+                                <color key="backgroundColor" red="0.71192532777786255" green="0.18100842304941014" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Wov-lN-tbC"/>
+                                </constraints>
+                                <state key="normal" title="UndoLastObject">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoLastObject:" destination="BV1-FR-VrT" eventType="touchUpInside" id="cAu-Fo-KKb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KA-VZ-OOd">
+                                <rect key="frame" x="278" y="36" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.71192532779999995" green="0.181008423" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="7Zu-ZG-EFc"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZbK-Rm-brx"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetAll:" destination="BV1-FR-VrT" eventType="touchUpInside" id="TCP-jn-1tU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RK5-mG-jKn" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" constant="16" id="690-0f-d5e"/>
+                            <constraint firstItem="6KA-VZ-OOd" firstAttribute="top" secondItem="ZCE-wD-2E2" secondAttribute="top" constant="16" id="7dy-3T-0mz"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="Hss-D4-YVK" secondAttribute="trailing" id="9BF-a4-DTs"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="Hss-D4-YVK" secondAttribute="bottom" id="9oE-EN-HGn"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="nGv-ui-K4i" secondAttribute="bottom" constant="20" id="EI9-ck-jaV"/>
+                            <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="6KA-VZ-OOd" secondAttribute="trailing" constant="17" id="FGP-Te-jV1"/>
+                            <constraint firstItem="6KA-VZ-OOd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Qi-V6-QdF" secondAttribute="trailing" constant="139" id="KMZ-Yw-mdt"/>
                             <constraint firstItem="Hss-D4-YVK" firstAttribute="top" secondItem="ZCE-wD-2E2" secondAttribute="top" id="OgV-19-dSa"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="RK5-mG-jKn" secondAttribute="bottom" constant="20" id="Pfd-Nb-YUs"/>
                             <constraint firstItem="RK5-mG-jKn" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" constant="16" id="SnR-GG-ypT"/>
+                            <constraint firstItem="nGv-ui-K4i" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6KA-VZ-OOd" secondAttribute="bottom" constant="541" id="eoX-eQ-oTa"/>
+                            <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="RK5-mG-jKn" secondAttribute="bottom" constant="20" id="gCQ-GU-Aj3"/>
+                            <constraint firstItem="5Qi-V6-QdF" firstAttribute="top" secondItem="ZCE-wD-2E2" secondAttribute="top" constant="16" id="gJO-Da-Us8"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="nGv-ui-K4i" secondAttribute="trailing" constant="17" id="i2L-km-UXq"/>
+                            <constraint firstItem="5Qi-V6-QdF" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" constant="16" id="kbg-iv-qjW"/>
                             <constraint firstItem="Hss-D4-YVK" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" id="tq9-FB-eeV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZCE-wD-2E2"/>

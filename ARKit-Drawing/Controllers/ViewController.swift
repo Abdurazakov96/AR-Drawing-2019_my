@@ -176,6 +176,16 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func undoLastObject(_ sender: Any) {
+        undoLastObject()
+        
+    }
+    
+    
+    @IBAction func resetAll(_ sender: Any) {
+        resetScene()
+    }
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
         
@@ -191,7 +201,7 @@ class ViewController: UIViewController {
         super.touchesEnded(touches, with: event)
         lastObjectPlacedPosition = nil
     }
-
+    
     // MARK: - Actions
     @IBAction func changeObjectMode(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
@@ -204,6 +214,9 @@ class ViewController: UIViewController {
         case 2:
             objectMode = .image
             showPlaneOverlay = false
+            
+            
+            
         default:
             break
         }
@@ -236,6 +249,7 @@ extension ViewController: OptionsViewControllerDelegate {
         lastNode.removeFromParentNode()
         placedNodes.removeLast()
     }
+    
     
     func resetScene() {
         dismiss(animated: true, completion: nil)

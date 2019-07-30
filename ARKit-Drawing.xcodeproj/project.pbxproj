@@ -47,6 +47,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C13189222F0D7020073A0E2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
+				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C13189322F0D7110073A0E2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6C13189422F0D71D0073A0E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEDB2EDB200EABAD001C6BBC /* models.scnassets */,
+				BEDB2EE2200EABAD001C6BBC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C13189522F0D72B0073A0E2 /* Storyboars */ = {
+			isa = PBXGroup;
+			children = (
+				BEDB2EE4200EABAD001C6BBC /* LaunchScreen.storyboard */,
+				BEDB2EDF200EABAD001C6BBC /* Main.storyboard */,
+			);
+			path = Storyboars;
+			sourceTree = "<group>";
+		};
 		BEDB2ECD200EABAD001C6BBC = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +101,11 @@
 		BEDB2ED8200EABAD001C6BBC /* ARKit-Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */,
-				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
-				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
-				BEDB2EDF200EABAD001C6BBC /* Main.storyboard */,
+				6C13189322F0D7110073A0E2 /* App */,
+				6C13189222F0D7020073A0E2 /* Controllers */,
 				BEDB2EF1200ECF14001C6BBC /* Options */,
-				BEDB2EDB200EABAD001C6BBC /* models.scnassets */,
-				BEDB2EE2200EABAD001C6BBC /* Assets.xcassets */,
-				BEDB2EE4200EABAD001C6BBC /* LaunchScreen.storyboard */,
+				6C13189422F0D71D0073A0E2 /* Resources */,
+				6C13189522F0D72B0073A0E2 /* Storyboars */,
 				BEDB2EE7200EABAD001C6BBC /* Info.plist */,
 			);
 			path = "ARKit-Drawing";
@@ -122,6 +154,7 @@
 				TargetAttributes = {
 					BEDB2ED5200EABAD001C6BBC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -313,14 +346,14 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = FC4H949Q49;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ARKit-Drawing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARKitDrawing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -332,14 +365,14 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = FC4H949Q49;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ARKit-Drawing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARKitDrawing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
